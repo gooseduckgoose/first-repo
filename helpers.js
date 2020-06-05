@@ -45,7 +45,7 @@ export function getInterpolatedRotation(deg, rotation) {
   if(typeof deg === 'undefined' || typeof rotation === 'undefined' || !Number.isInteger(deg) || !Number.isInteger(rotation)) {
     throw new Error(`Invalid arguments, expected (deg = integer, rotation = integer.`)
   }
-  return deg * rotation / 340
+  return deg * rotation / 360
 }
 
 
